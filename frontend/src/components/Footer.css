@@ -168,25 +168,25 @@
 
 @media (max-width: 768px) 
 {
-  /* .footer-content {
+  .footer-content {
     flex-direction: column;
   }
 
   .footer-right {
     flex-direction: row;
-  } */
+  }
 
-  /* .footer-meta {
+  .footer-meta {
     flex-direction: row;
     text-align: center;
-  } */
+  }
 
-  /* .hire-banner {
+  .hire-banner {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .social-links {
     justify-content: flex-start;
-  } */
+  }
 }

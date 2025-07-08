@@ -1,8 +1,6 @@
-
+/* Header base */
 .header {
   background: white;
-  /* padding: 1rem 0; */
-  /* border-bottom: 1px solid #e5e5e5; */
 }
 
 .container {
@@ -12,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo h2 {
@@ -21,11 +20,16 @@
   color: #333;
 }
 
-#person{
- margin: -2px 7px;
- color: black;
+#logo {
+  height: 50px;
 }
 
+#person {
+  margin: -2px 7px;
+  color: black;
+}
+
+/* Navigation */
 .nav {
   display: flex;
   align-items: center;
@@ -42,7 +46,7 @@
   cursor: pointer;
 }
 
-.nav-link::after{
+.nav-link::after {
   content: '';
   position: absolute;
   width: 70%;
@@ -59,6 +63,7 @@
   transform: scaleX(1);
 }
 
+/* Buttons */
 .login-btn {
   background: none;
   border: 1px solid #ddd;
@@ -70,16 +75,9 @@
   transition: transform 0.3s ease;
 }
 
-.login-btn:hover{
+.login-btn:hover {
   color: white;
   background-color: #333;
-}
-
-.signup-btn:hover{
-  color: #333;
-  background-color: white;
-  border: 1px solid #333;
-
 }
 
 .signup-btn {
@@ -94,11 +92,58 @@
   transition: transform 0.3s ease;
 }
 
+.signup-btn:hover {
+  color: #333;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .nav {
     display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 100;
   }
-  
+
+  .nav.nav-open {
+    display: flex;
+  }
+
+  .nav-link,
+  .login-btn,
+  .signup-btn {
+    width: 100%;
+    text-align: left;
+  }
+
+  .login-btn,
+  .signup-btn {
+    padding: 0.7rem 1rem;
+  }
+
   .container {
     padding: 0 1rem;
   }
