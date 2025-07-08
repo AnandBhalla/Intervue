@@ -114,4 +114,8 @@
   .feature {
     width: 100%;
   }
+
+  .feature-left{
+  width: 138%;
+}
 }
