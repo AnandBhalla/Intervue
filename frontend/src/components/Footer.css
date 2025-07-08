@@ -1,0 +1,191 @@
+.footer {
+  background: #27282C;
+  color: white;
+  padding: 5rem 3rem;
+  font-family: sans-serif;
+}
+
+#footer-logo{
+  height: 60px;
+  width: 230px;
+  margin: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  padding: 0 2rem;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  /* margin-bottom: 1rem; */
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: .5rem;
+  /* gap: 2rem; */
+}
+
+/* Left side */
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.social-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+.hire-banner {
+  background: none;
+  /* border-radius: 8px; */
+  /* padding: 1.5rem; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #ffd700;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.hire-banner h5{
+  font-weight: 400;
+}
+
+.email-signup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.email-signup input {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #333;
+  color: white;
+  min-width: 220px;
+}
+
+.email-signup button {
+  background: none;
+  color: #ffd700;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Right side */
+.footer-right {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  min-width: 150px;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.meta-links{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Meta bottom */
+.footer-meta {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.footer-meta p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.footer-meta .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-right {
+    flex-direction: column;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hire-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+}
